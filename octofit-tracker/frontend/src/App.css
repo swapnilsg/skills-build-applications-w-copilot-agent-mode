@@ -1,0 +1,122 @@
+/* OctoFit Tracker Custom Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa 0%, #f8bbd0 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navigation styles */
+nav.navbar {
+  background: linear-gradient(90deg, #1976d2 0%, #43a047 100%);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
+  border-radius: 0 0 16px 16px;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 12px;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffd600 !important;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #1976d2;
+  font-weight: 700;
+}
+
+/* Table styles */
+table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+thead.table-primary {
+  background: linear-gradient(90deg, #1976d2 0%, #43a047 100%);
+  color: #fff;
+}
+tbody tr:nth-child(even) {
+  background: #e3f2fd;
+}
+tbody tr:hover {
+  background: #b2dfdb;
+}
+
+/* Buttons */
+.btn-primary, .btn-success, .btn-outline-primary {
+  background: linear-gradient(90deg, #1976d2 0%, #43a047 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.12);
+  transition: background 0.2s;
+}
+.btn-primary:hover, .btn-success:hover, .btn-outline-primary:hover {
+  background: linear-gradient(90deg, #43a047 0%, #1976d2 100%);
+  color: #ffd600;
+}
+
+/* Links */
+a, .btn-link {
+  color: #1976d2;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, .btn-link:hover {
+  color: #43a047;
+  text-decoration: underline;
+}
+
+/* Card styles */
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.10);
+  background: #fff;
+}
+.card-title {
+  color: #43a047;
+}
+
+/* Favicon */
+.link-favicon {
+  display: none;
+}
+
+/* Logo on home */
+.octofit-logo {
+  height: 60px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .octofit-logo {
+    height: 36px;
+  }
+}
